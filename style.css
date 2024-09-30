@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.menu-nav {
+    background-color: rgb(63, 162, 255);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: white;
+}
+
+.slider-container {
+    background-color: rgb(255, 25, 82);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.card {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    width: 492px;
+    
+}
+
+.text-mosaic {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: fill;
+}
+
+.text-content {
+    background-color: rgb(18, 166, 186);
+    flex: 1 2 300px;
+    padding: 10px;
+    color: white;
+    height: 500px;
+}
+
+.mosaicFotos {
+    flex-direction: column;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    /* background-color: chartreuse; */
+    flex: 1 1 300px;
+    /* padding: 10px; */
+    text-align: center;
+    
+}
+
+.mosaicFotos p {
+    background-color: rgb(0, 255, 179);
+    /* border: solid rgb(0, 255, 179); */
+    flex-direction: colum;
+    /* padding: 10px; */
+    height: 225px;
+    align-content: center;
+   
+}
+

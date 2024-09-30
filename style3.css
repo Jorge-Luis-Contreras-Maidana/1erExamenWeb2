@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.menu-nav {
+    /* background-color: rgb(63, 162, 255); */
+    background-image: url(img/fondo.jpeg);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: white;
+}
+
+.slider-container {
+    background-image: url(img/fondo.jpeg);
+    /* background-color: rgb(255, 25, 82); */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.card {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    width: 492px;
+    
+}
+
+.text-mosaic {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: fill;
+}
+
+.text-content {
+    background-color: rgb(18, 166, 186);
+    flex: 1 2 300px;
+    padding: 10px;
+    color: white;
+    height: 500px;
+}
+
+.mosaicFotos {
+    flex-direction: column;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    /* background-color: chartreuse; */
+    flex: 1 1 300px;
+    /* padding: 10px; */
+    text-align: center;
+    
+}
+
+.mosaicFotos p {
+    background-color: rgb(0, 255, 179);
+    /* border: solid rgb(0, 255, 179); */
+    flex-direction: colum;
+    /* padding: 10px; */
+    height: 225px;
+    align-content: center;
+   
+}
+
+.mosaicFotos p img {
+    height: auto;
+    width: 250px;
+   
+}
+
+.transicion2:hover { /* Eliminado el espacio entre la clase y el pseudo-clase :hover */
+    font-size: 24px;
+}
+
+.transicion3:hover {
+    transform: translateX(100px);
+}
+
+
+/* Cambio de opacidad y estilo de fuente */
+.transicion4:hover {
+    opacity: 0.5;
+    font-style: oblique;
+}
+
+@keyframes backgroundChange{
+    0%{ background-color: white;}
+    50%{background-color: lightblue;}
+    100%{background-color: white;}
+}
+
+/* .animacion1{
+    animation:backgroundChange 1s infinite ;
+} */
+
+
+/* Animación de Desvanecimiento */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+/* 2. Animación de Desplazamiento Horizontal */
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+
+/* 3. Rotación Infinita */
+
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+/* 4. Cambio de Color de Fondo */
+
+@keyframes backgroundColorChange {
+    0% { background-color: #ff7e5f; }
+    50% { background-color: #feb47b; }
+    100% { background-color: #ff7e5f; }
+}
+
+.bg-color-change {
+    animation: backgroundColorChange 4s infinite;
+}
+
+/* 5. Efecto de Rebote */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.bounce {
+    animation: bounce 2s infinite;
+}
